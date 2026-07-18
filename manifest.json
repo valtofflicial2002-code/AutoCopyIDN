@@ -1,0 +1,57 @@
+{
+  "manifest_version": 3,
+  "name": "AutocopyIDN",
+  "version": "2.0.0",
+  "description": "Auto Copy IDN - with system notification & cache system",
+  "permissions": [
+    "storage",
+    "notifications",
+    "clipboardWrite",
+    "clipboardRead"
+  ],
+  "host_permissions": [
+    "https://agent.idns889.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "AutocopyIDN",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://agent.idns889.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "dashboard/history.html",
+        "dashboard/history.js",
+        "dashboard/history.css"
+      ],
+      "matches": [
+        "https://agent.idns889.com/*"
+      ]
+    }
+  ],
+  "minimum_chrome_version": "88"
+}
