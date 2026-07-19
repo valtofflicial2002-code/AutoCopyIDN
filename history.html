@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoCopyIDN - History Dashboard</title>
+    <link rel="stylesheet" href="history.css">
+</head>
+<body>
+
+<div class="container">
+<header>
+    <h1>📄 History Copy Operator</h1>
+    <div class="header-actions">
+        <button id="set-agent" title="Set Nama Agent">👨‍💼</button>
+        <button id="clear-history" class="btn-clear">🗑️ Clear History</button>
+    </div>
+</header>
+
+    <div class="filter-container">
+        <button class="btn-filter active" data-filter="all">Semua Data</button>
+        <button class="btn-filter" data-filter="DEPOSIT">Depo</button> 
+        <button class="btn-filter" data-filter="PULSA">Pulsa</button>
+        <button class="btn-filter" data-filter="WITHDRAW">Withdraw</button>
+        <button class="btn-filter" data-filter="BONUS">Bonus</button>
+    </div>
+
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>WAKTU COPY</th>
+                    <th>WEBSITE</th>
+                    <th>USERNAME</th>
+                    <th>REKENING</th>
+                    <th>JUMLAH</th>
+                    <th>MODE</th>
+                    <th>KETERANGAN</th> </tr>
+            </thead>
+            <tbody id="history-table-body">
+                </tbody>
+        </table>
+    </div>
+    
+    <div id="empty-notification" class="empty-state" style="display: none;">
+        Belum ada data copy yang tersimpan.
+    </div>
+</div>
+
+<script src="history.js"></script>
+</body>
+</html>

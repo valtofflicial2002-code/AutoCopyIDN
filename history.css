@@ -1,0 +1,229 @@
+/* =========================================================
+   AUTOCOPYIDN STYLE SHEET - PREMIUM DARK NEON THEME
+   ========================================================= */
+
+* { 
+    box-sizing: border-box; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+}
+
+body { 
+    background: linear-gradient(135deg, #070b12 0%, #101726 100%); 
+    color: #e2e8f0; 
+    padding: 25px; 
+    min-height: 100vh;
+}
+
+.container { 
+    max-width: 1250px; 
+    margin: 0 auto; 
+    background: #141b2d; 
+    padding: 25px; 
+    border-radius: 12px; 
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* =========================================================
+   HEADER & ACTIONS AREA (NEW NEON STYLE)
+   ========================================================= */
+header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+    padding-bottom: 18px; 
+    margin-bottom: 25px; 
+}
+
+h1 { 
+    color: #ffffff; 
+    font-size: 24px; 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-shadow: 0 0 15px rgba(0, 191, 255, 0.3);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Tombol Set Agent (Cyan Neon Glow) */
+#set-agent {
+    background: rgba(0, 191, 255, 0.08); 
+    color: #ffffff; 
+    border: 1px solid rgba(0, 191, 255, 0.4); 
+    padding: 8px 14px; 
+    font-size: 18px; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#set-agent:hover {
+    background: rgba(0, 191, 255, 0.2); 
+    border-color: #00bfff;
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.5);
+    transform: translateY(-1px);
+}
+
+/* Tombol Clear History (Pink/Red Neon Glow) */
+.btn-clear { 
+    background: rgba(255, 0, 85, 0.1); 
+    color: #ff0055; 
+    border: 1px solid #ff0055;
+    padding: 9px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.btn-clear:hover { 
+    background: #ff0055; 
+    color: #fff;
+    box-shadow: 0 0 15px rgba(255, 0, 85, 0.5);
+    transform: translateY(-1px);
+}
+
+/* =========================================================
+   FILTER KONTROL & BUTTONS (NEON STYLE)
+   ========================================================= */
+.filter-container { 
+    display: flex; 
+    gap: 12px; 
+    margin-bottom: 25px; 
+    flex-wrap: wrap; 
+}
+
+.btn-filter { 
+    padding: 9px 18px; 
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    border-radius: 8px; 
+    cursor: pointer; 
+    font-weight: bold; 
+    font-size: 13px; 
+    background: #1f293d; 
+    color: #94a3b8; 
+    transition: all .25s ease; 
+}
+
+.btn-filter:hover {
+    color: #ffffff;
+    background: #2a3754;
+    border-color: rgba(0, 191, 255, 0.5);
+}
+
+/* Kondisi Tombol Filter Aktif */
+.btn-filter.active { 
+    background: rgba(0, 191, 255, 0.15); 
+    color: #00bfff; 
+    border: 1px solid #00bfff;
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.4);
+}
+
+/* =========================================================
+   DESAIN TABEL FUTURISTIK
+   ========================================================= */
+.table-responsive { 
+    overflow-x: auto; 
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    text-align: left; 
+    font-size: 14px; 
+    background: #111827;
+}
+
+th, td { 
+    padding: 14px 18px; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
+    white-space: nowrap; 
+}
+
+th { 
+    background-color: #1f293d; 
+    color: #00bfff; 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    font-size: 11px; 
+    letter-spacing: 0.5px;
+}
+
+tr:hover { 
+    background-color: rgba(255, 255, 255, 0.02); 
+}
+
+/* Kolom data spesifik agar kontras */
+td:nth-child(3) { color: #f8fafc; font-weight: 600; } /* Username */
+td:nth-child(5) { color: #38bdf8; font-weight: bold; } /* Jumlah */
+
+code {
+    background-color: #1e293b;
+    color: #38bdf8;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-family: Courier, monospace;
+    font-size: 13px;
+    border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+/* =========================================================
+   BADGE STATUS MODE (VERSI NEON METICULOUS)
+   ========================================================= */
+.badge {
+    padding: 6px 12px;
+    border-radius: 20px; 
+    font-size: 11px;
+    font-weight: 800;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    min-width: 85px;
+    letter-spacing: 0.5px;
+}
+
+/* Biru Neon (Deposit) */
+.badge-deposit { 
+    background-color: #00bfff; 
+    box-shadow: 0 0 12px rgba(0, 191, 255, 0.45);
+}
+
+/* Ungu Neon (Withdraw) */
+.badge-withdraw { 
+    background-color: #b026ff; 
+    box-shadow: 0 0 12px rgba(176, 38, 255, 0.45);
+}
+
+/* Merah Neon (Pulsa) */
+.badge-pulsa { 
+    background-color: #ff0055; 
+    box-shadow: 0 0 12px rgba(255, 0, 85, 0.45);
+}
+
+/* Orange Neon (Bonus) */
+.badge-bonus { 
+    background-color: #ff6c00; 
+    box-shadow: 0 0 12px rgba(255, 108, 0, 0.45);
+}
+
+.empty-state { 
+    text-align: center; 
+    padding: 50px; 
+    color: #64748b; 
+    font-style: italic; 
+    background: #111827;
+}
